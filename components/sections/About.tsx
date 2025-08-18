@@ -6,10 +6,10 @@ export default function About() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-16 text-center">
           <h2 className="mb-4 text-4xl font-bold text-gray-900">
-            What We're About
+            What We&apos;re About
           </h2>
           <p className="mx-auto max-w-3xl text-xl text-gray-600">
-            We're a community of aspiring product managers, designers, and
+            We&apos;re a community of aspiring product managers, designers, and
             developers passionate about creating products that matter.
           </p>
         </div>
