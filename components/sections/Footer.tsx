@@ -63,6 +63,18 @@ export default function Footer() {
               >
                 <Linkedin className="h-6 w-6" />
               </a>
+              <a
+                href="https://apps.ideal-logic.com/osusee?key=F3T9-25VWY_5878-CZ4R_9c5a984561a0"
+                className="text-gray-400 transition-colors hover:text-white"
+              >
+                Ideal Logic
+              </a>
+              <a
+                href="https://discord.gg/J2JkZK7JBM"
+                className="text-gray-400 transition-colors hover:text-white"
+              >
+                Discord
+              </a>
             </div>
           </div>
         </div>
