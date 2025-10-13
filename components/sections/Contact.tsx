@@ -1,5 +1,4 @@
-import { Mail, MapPin } from "lucide-react";
-import PageHeader from "../ui/PageHeader";
+import { Mail, MapPin, Instagram, Linkedin, MessageCircle } from "lucide-react";
 
 export default function Contact() {
   return (
@@ -30,6 +29,39 @@ export default function Contact() {
             <div className="flex items-center justify-center">
               <MapPin className="mr-3 h-6 w-6 text-red-400" />
               <span className="text-lg">Corvallis, Oregon</span>
+            </div>
+          </div>
+
+          <div className="mt-12">
+            <h3 className="mb-8 text-2xl font-semibold">Follow Us</h3>
+            <div className="flex justify-center space-x-8">
+              <a
+                href="https://www.instagram.com/productmanagement.osu"
+                className="flex items-center space-x-2 text-gray-400 transition-colors hover:text-white"
+              >
+                <Instagram className="h-6 w-6" />
+                <span>Instagram</span>
+              </a>
+              <a
+                href="https://www.linkedin.com/company/product-management-club-osu"
+                className="flex items-center space-x-2 text-gray-400 transition-colors hover:text-white"
+              >
+                <Linkedin className="h-6 w-6" />
+                <span>LinkedIn</span>
+              </a>
+              <a
+                href="#"
+                className="flex items-center space-x-2 text-gray-400 transition-colors hover:text-white"
+              >
+                <MessageCircle className="h-6 w-6" />
+                <span>Discord</span>
+              </a>
+              <a
+                href="#"
+                className="flex items-center space-x-2 text-gray-400 transition-colors hover:text-white"
+              >
+                <span className="text-lg font-medium">Ideal Logic</span>
+              </a>
             </div>
           </div>
         </div>

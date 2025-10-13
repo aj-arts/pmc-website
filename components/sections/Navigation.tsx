@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Menu, X } from "lucide-react";
 
 export default function Navigation() {
@@ -9,7 +10,7 @@ export default function Navigation() {
 
   const navItems = [
     { href: "/about", label: "About" },
-    { href: "/projects", label: "Projects" },
+    { href: "/projects", label: "Events" },
     { href: "/officers", label: "Officers" },
     { href: "/contact", label: "Contact" },
   ];
@@ -17,11 +18,20 @@ export default function Navigation() {
   return (
     <nav className="fixed top-0 z-50 w-full border-b border-gray-200 bg-white/90 backdrop-blur-md">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="flex h-16 items-center justify-between">
+        <div className="flex h-20 items-center justify-between">
           {/* Logo */}
-          <div className="flex-shrink-0">
-            <Link href="/" className="text-2xl font-bold text-red-600">
-              PMC OSU
+          <div className="flex items-center space-x-3">
+            <Link href="/" className="flex items-center space-x-3">
+              <Image
+                src="/logo.png"
+                alt="PMC OSU Logo"
+                width={48}
+                height={48}
+                className="h-12 w-12 object-contain"
+              />
+              <span className="text-2xl font-bold text-red-600">
+                PMC OSU
+              </span>
             </Link>
           </div>
 

@@ -1,4 +1,3 @@
-import Footer from "../../components/sections/Footer";
 import { Lightbulb, Users, Briefcase, Target, Award, Calendar } from "lucide-react";
 
 export default function AboutPage() {
@@ -157,8 +156,6 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
-
-      <Footer />
     </div>
   );
 }
