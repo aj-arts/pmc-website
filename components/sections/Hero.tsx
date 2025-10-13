@@ -8,7 +8,7 @@ export default function Hero() {
             <span className="block text-red-600">Club at OSU</span>
           </h1>
           <p className="mb-6 text-lg italic text-gray-700 md:text-xl">
-            "Learn the Process. Lead the Product."
+            &ldquo;Learn the Process. Lead the Product.&rdquo;
           </p>
           <p className="mx-auto mb-8 max-w-3xl text-xl text-gray-600 md:text-2xl">
             Learn, build, and innovate with fellow product enthusiasts. Join us
