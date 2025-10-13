@@ -8,6 +8,8 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 
 const projects = [
   {
@@ -126,6 +128,16 @@ export default function Projects() {
           <CarouselPrevious />
           <CarouselNext />
         </Carousel>
+
+        <div className="mt-12 text-center">
+          <Link
+            href="/projects"
+            className="inline-flex items-center gap-2 rounded-lg bg-red-600 px-6 py-3 text-white transition-colors duration-200 hover:bg-red-700"
+          >
+            View All Projects
+            <ArrowRight className="h-4 w-4" />
+          </Link>
+        </div>
       </div>
     </section>
   );

@@ -8,6 +8,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
+import PageHeader from "../ui/PageHeader";
 import Autoplay from "embla-carousel-autoplay";
 
 const officers = [
@@ -51,15 +52,10 @@ export default function Officers() {
   return (
     <section id="officers" className="bg-white py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="mb-16 text-center">
-          <h2 className="mb-4 text-4xl font-bold text-gray-900">
-            Meet Our Officers
-          </h2>
-          <p className="mx-auto max-w-3xl text-xl text-gray-600">
-            Our dedicated leadership team is here to guide and support your
-            product management journey.
-          </p>
-        </div>
+        <PageHeader
+          title="Meet Our Officers"
+          subtitle="Our dedicated leadership team is here to guide and support your product management journey."
+        />
 
         <Carousel
           plugins={[

@@ -1,4 +1,5 @@
-import { Lightbulb, Users, Briefcase } from "lucide-react";
+import { Lightbulb, Users, Briefcase, ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 export default function About() {
   return (
@@ -49,6 +50,16 @@ export default function About() {
               experience in product development.
             </p>
           </div>
+        </div>
+
+        <div className="mt-12 text-center">
+          <Link
+            href="/about"
+            className="inline-flex items-center gap-2 rounded-lg bg-red-600 px-6 py-3 text-white transition-colors duration-200 hover:bg-red-700"
+          >
+            Learn More About Us
+            <ArrowRight className="h-4 w-4" />
+          </Link>
         </div>
       </div>
     </section>
