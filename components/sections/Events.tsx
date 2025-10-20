@@ -47,33 +47,6 @@ const events: EventItem[] = [
       // { label: "Recording", url: "https://osu.zoom.us/rec/EXAMPLE" },           // if available
     ],
   },
-  {
-    title: "Tech Talk: Building Scalable Apps",
-    date: "Tue • Nov 15 • 6:00–8:00 PM",
-    location: "Kelley Engineering Center",
-    description:
-      "Join us for an insightful session on best practices for building scalable applications.",
-    ctaLabel: "Add to Calendar",
-    ctaHref: "https://calendar.google.com/",
-  },
-  {
-    title: "PM Case Study Competition",
-    date: "Fri • Nov 22 • 5:00–9:00 PM",
-    location: "Memorial Union",
-    description:
-      "Test your product management skills in our annual case study competition with prizes!",
-    ctaLabel: "Register Now",
-    ctaHref: "https://calendar.google.com/",
-  },
-  {
-    title: "Industry Panel: Career Paths",
-    date: "Tue • Dec 3 • 7:00–8:30 PM",
-    location: "Austin Hall",
-    description:
-      "Learn from industry professionals about different career paths in product management.",
-    ctaLabel: "Add to Calendar",
-    ctaHref: "https://calendar.google.com/",
-  },
 ];
 
 export default function Events() {
