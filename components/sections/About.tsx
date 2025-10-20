@@ -10,8 +10,8 @@ export default function About() {
             What We&apos;re About
           </h2>
           <p className="mx-auto max-w-3xl text-xl text-gray-600">
-            We&apos;re a community of aspiring product managers, designers, and
-            developers passionate about creating products that matter.
+            We&apos;re a community of students who want to inspire product management thinking, 
+            foster innovation, and build the next generation of product leaders at Oregon State University.
           </p>
         </div>
 

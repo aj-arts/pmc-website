@@ -7,9 +7,9 @@ export default function Hero() {
             Product Management
             <span className="block text-red-600">Club at OSU</span>
           </h1>
-          <p className="mx-auto mb-8 max-w-3xl text-xl text-gray-600 md:text-2xl">
-            Learn, build, and innovate with fellow product enthusiasts. Join us
-            to develop real-world products and advance your PM skills.
+          <p className="mx-auto mb-8 max-w-4xl text-2xl font-light text-gray-700 md:text-3xl">
+            <span className="font-semibold text-gray-900">Learn the process.</span>{" "}
+            <span className="font-semibold text-red-600">Lead the product.</span>
           </p>
           <div className="flex flex-col justify-center gap-4 sm:flex-row">
             <a
