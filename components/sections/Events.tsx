@@ -55,7 +55,7 @@ export default function Events() {
       <header className="mb-6">
         <h2 className="text-3xl font-bold tracking-tight">Events</h2>
         <p className="mt-2 text-muted-foreground">
-          Come build with us. Here's what's happening next.
+          Come build with us. Here&apos;s what&apos;s happening next.
         </p>
       </header>
 
