@@ -16,8 +16,8 @@ export default function About() {
 
         <div className="grid gap-8 md:grid-cols-3">
           <div className="p-6 text-center">
-            <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-red-100">
-              <Lightbulb className="h-8 w-8 text-red-600" />
+            <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-[#FEF2EE]">
+              <Lightbulb className="h-8 w-8 text-[#D35100]" />
             </div>
             <h3 className="mb-2 text-xl font-semibold text-gray-900">Learn</h3>
             <p className="text-gray-600">
@@ -27,8 +27,8 @@ export default function About() {
           </div>
 
           <div className="p-6 text-center">
-            <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-red-100">
-              <Users className="h-8 w-8 text-red-600" />
+            <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-[#FEF2EE]">
+              <Users className="h-8 w-8 text-[#D35100]" />
             </div>
             <h3 className="mb-2 text-xl font-semibold text-gray-900">
               Network
@@ -40,8 +40,8 @@ export default function About() {
           </div>
 
           <div className="p-6 text-center">
-            <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-red-100">
-              <Briefcase className="h-8 w-8 text-red-600" />
+            <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-[#FEF2EE]">
+              <Briefcase className="h-8 w-8 text-[#D35100]" />
             </div>
             <h3 className="mb-2 text-xl font-semibold text-gray-900">Build</h3>
             <p className="text-gray-600">

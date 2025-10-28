@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid gap-8 md:grid-cols-3">
           <div>
-            <h3 className="mb-4 text-2xl font-bold text-red-500">PMC OSU</h3>
+            <h3 className="mb-4 text-2xl font-bold text-[#D35100]">PMC OSU</h3>
             <p className="text-gray-400">
               Building the next generation of product leaders at Oregon State
               University.
@@ -23,10 +23,10 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="#projects"
+                  href="#events"
                   className="transition-colors hover:text-white"
                 >
-                  Projects
+                  Events
                 </a>
               </li>
               <li>

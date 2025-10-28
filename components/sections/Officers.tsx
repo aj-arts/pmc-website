@@ -26,7 +26,7 @@ const officers = [
 ];
 
 const gradientColors = [
-  "from-red-400 to-red-600",
+  "from-[#FF7733] to-[#D35100]",
   "from-blue-400 to-blue-600",
   "from-green-400 to-green-600",
   "from-purple-400 to-purple-600",
@@ -98,7 +98,7 @@ export default function Officers() {
                   <h3 className="mb-1 text-lg font-semibold text-gray-900">
                     {officer.name}
                   </h3>
-                  <p className="mb-1 text-sm font-medium text-red-600">
+                  <p className="mb-1 text-sm font-medium text-[#D35100]">
                     {officer.role}
                   </p>
                 </div>

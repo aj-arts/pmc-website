@@ -20,7 +20,7 @@ export default function Navigation() {
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <Link href="/" className="text-2xl font-bold text-red-600">
+            <Link href="/" className="text-2xl font-bold text-[#D35100]">
               PMC OSU
             </Link>
           </div>
@@ -32,7 +32,7 @@ export default function Navigation() {
                 <a
                   key={item.href}
                   href={item.href}
-                  className="px-3 py-2 text-sm font-medium text-gray-700 transition-colors duration-200 hover:text-red-600"
+                  className="px-3 py-2 text-sm font-medium text-gray-700 transition-colors duration-200 hover:text-[#D35100]"
                 >
                   {item.label}
                 </a>
@@ -44,7 +44,7 @@ export default function Navigation() {
           <div className="md:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-gray-700 hover:text-red-600 focus:text-red-600 focus:outline-none"
+              className="text-gray-700 hover:text-[#D35100] focus:text-[#D35100] focus:outline-none"
               aria-label="Toggle menu"
             >
               {isMenuOpen ? (
@@ -64,7 +64,7 @@ export default function Navigation() {
                 <a
                   key={item.href}
                   href={item.href}
-                  className="block px-3 py-2 text-base font-medium text-gray-700 transition-colors duration-200 hover:text-red-600"
+                  className="block px-3 py-2 text-base font-medium text-gray-700 transition-colors duration-200 hover:text-[#D35100]"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.label}

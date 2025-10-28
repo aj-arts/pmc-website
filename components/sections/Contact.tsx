@@ -16,11 +16,11 @@ export default function Contact() {
           <h3 className="mb-8 text-2xl font-semibold">Contact Information</h3>
           <div className="space-y-6">
             <div className="flex items-center justify-center">
-              <Mail className="mr-3 h-6 w-6 text-red-400" />
+              <Mail className="mr-3 h-6 w-6 text-[#D35100]" />
               <span className="text-lg">pm.clubs@oregonstate.edu</span>
             </div>
             <div className="flex items-center justify-center">
-              <MapPin className="mr-3 h-6 w-6 text-red-400" />
+              <MapPin className="mr-3 h-6 w-6 text-[#D35100]" />
               <span className="text-lg">Corvallis, Oregon</span>
             </div>
           </div>
