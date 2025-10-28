@@ -2,6 +2,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 // If you already use shadcn Button, uncomment next line and replace <a> with <Button asChild>
 // import { Button } from "../ui/button";
 
@@ -79,7 +80,9 @@ export default function Events() {
             )}
 
             <div className="p-5">
-              <h3 className="text-xl font-semibold">{e.title}</h3>
+              <Link href="/events/guest-speaker-andy-beach">
+                <h3 className="text-xl font-semibold hover:text-orange-600 cursor-pointer transition-colors">{e.title}</h3>
+              </Link>
 
               <div className="mt-1 text-sm text-muted-foreground">
                 <time>{e.date}</time>

@@ -29,13 +29,13 @@ export default function Navigation() {
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
               {navItems.map((item) => (
-                <a
+                <Link
                   key={item.href}
-                  href={item.href}
+                  href={item.href.startsWith('#') ? `/${item.href}` : item.href}
                   className="px-3 py-2 text-sm font-medium text-gray-700 transition-colors duration-200 hover:text-[#D35100]"
                 >
                   {item.label}
-                </a>
+                </Link>
               ))}
             </div>
           </div>
@@ -61,14 +61,14 @@ export default function Navigation() {
           <div className="md:hidden">
             <div className="space-y-1 border-t border-gray-200 bg-white px-2 pt-2 pb-3 sm:px-3">
               {navItems.map((item) => (
-                <a
+                <Link
                   key={item.href}
-                  href={item.href}
+                  href={item.href.startsWith('#') ? `/${item.href}` : item.href}
                   className="block px-3 py-2 text-base font-medium text-gray-700 transition-colors duration-200 hover:text-[#D35100]"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.label}
-                </a>
+                </Link>
               ))}
             </div>
           </div>
