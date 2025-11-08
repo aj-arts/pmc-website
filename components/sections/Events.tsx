@@ -17,6 +17,7 @@ type EventItem = {
   cover?: string;
   ctaLabel?: string;
   ctaHref?: string;
+  href: string;
   agenda?: EventAgendaItem[];
   resources?: EventResource[];
 };
@@ -24,13 +25,14 @@ type EventItem = {
 const events: EventItem[] = [
   {
     title: "Andy Beach Guest Speaker + Club Kickoff",
-    date: "Tue • Oct 1 • 6:00–7:00 PM",
+    date: "Wed • Oct 1 • 6:00–7:00 PM",
     location: "LINC 368 + Zoom",
     description:
       "Kickoff night featuring Andy Beach (CTO, Media & Entertainment at Microsoft). Discussion on product leadership, AI, and career insights, followed by Q&A.",
     cover: "/events/AndyBeach.jpg",
     ctaLabel: "Add to Calendar",
     ctaHref: "https://calendar.google.com/", // TODO: replace with actual calendar link
+    href: "/events/guest-speaker-andy-beach",
     agenda: [
       { time: "6:00", item: "Arrival & Welcome" },
       {
@@ -43,6 +45,34 @@ const events: EventItem[] = [
       },
       { time: "6:40", item: "Q&A session — open floor" },
       { time: "6:55", item: "Closing notes" },
+      { time: "7:00", item: "End of event" },
+    ],
+    resources: [
+      // { label: "Slides", url: "https://docs.google.com/presentation/d/EXAMPLE" }, // if available
+      // { label: "Recording", url: "https://osu.zoom.us/rec/EXAMPLE" },           // if available
+    ],
+  },
+  {
+    title: "Scott Hanselman Guest Speaker",
+    date: "Wed • Nov 5 • 6:00–7:00 PM",
+    location: "LINC 307",
+    description:
+      "Featuring Scott Hanselman (VP, Developer Community @ Microsoft) — longtime blogger, speaker, and host of Hanselminutes and Azure Friday. He'll share insights on product leadership, community-driven development, and what makes technology truly resonate with users.",
+    cover: "/events/hanselman-headshot.jpg",
+    ctaLabel: "Add to Calendar",
+    ctaHref: "https://calendar.google.com/", // TODO: replace with actual calendar link
+    href: "/events/guest-speaker-event-2",
+    agenda: [
+      { time: "6:00", item: "Arrival & Welcome" },
+      {
+        time: "6:05",
+        item: "Opening remarks and introduction of guest speaker Scott Hanselman",
+      },
+      {
+        time: "6:10",
+        item: "Interactive Session with Scott: What it means to be a PM; how users pick products; product trends and success factors; live demonstrations with audience discussion and feedback; exploring different types of product design, invention styles, and multifunctional products",
+      },
+      { time: "6:55", item: "Closing reflections and final advice" },
       { time: "7:00", item: "End of event" },
     ],
     resources: [
@@ -82,7 +112,7 @@ export default function Events() {
             )}
 
             <div className="p-5">
-              <Link href="/events/guest-speaker-andy-beach">
+              <Link href={e.href}>
                 <h3 className="cursor-pointer text-xl font-semibold transition-colors hover:text-orange-600">
                   {e.title}
                 </h3>

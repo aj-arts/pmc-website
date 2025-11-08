@@ -61,12 +61,14 @@ jobs:
         env:
           NODE_ENV: production
 
-      - name: Upload build artifacts
-        uses: actions/upload-artifact@v4
-        with:
-          name: build-files
-          path: .next
-          retention-days: 1
+      # Artifacts are optional - uncomment if you need to download build files
+      # - name: Upload build artifacts
+      #   uses: actions/upload-artifact@v4
+      #   if: always()
+      #   with:
+      #     name: build-files
+      #     path: .next
+      #     retention-days: 1
 
   # Optional: Add deployment job here when ready
   # deploy:
