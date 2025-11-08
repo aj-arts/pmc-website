@@ -31,7 +31,7 @@ export default function Navigation() {
               {navItems.map((item) => (
                 <Link
                   key={item.href}
-                  href={item.href.startsWith('#') ? `/${item.href}` : item.href}
+                  href={item.href.startsWith("#") ? `/${item.href}` : item.href}
                   className="px-3 py-2 text-sm font-medium text-gray-700 transition-colors duration-200 hover:text-[#D35100]"
                 >
                   {item.label}
@@ -63,7 +63,7 @@ export default function Navigation() {
               {navItems.map((item) => (
                 <Link
                   key={item.href}
-                  href={item.href.startsWith('#') ? `/${item.href}` : item.href}
+                  href={item.href.startsWith("#") ? `/${item.href}` : item.href}
                   className="block px-3 py-2 text-base font-medium text-gray-700 transition-colors duration-200 hover:text-[#D35100]"
                   onClick={() => setIsMenuOpen(false)}
                 >

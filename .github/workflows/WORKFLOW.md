@@ -7,6 +7,7 @@ Your described workflow is **mostly correct**, but here's the improved version:
 ### Step-by-Step Process
 
 1. **Create your feature branch**
+
    ```bash
    git checkout -b deepti-branch
    ```
@@ -20,6 +21,7 @@ Your described workflow is **mostly correct**, but here's the improved version:
      ```
 
 3. **Keep your branch up-to-date with main** (Important!)
+
    ```bash
    git checkout main
    git pull origin main
@@ -27,12 +29,15 @@ Your described workflow is **mostly correct**, but here's the improved version:
    git merge main
    # Or use rebase: git rebase main
    ```
+
    This ensures your branch has the latest changes from main and reduces merge conflicts.
 
 4. **Push your branch and create a Pull Request**
+
    ```bash
    git push origin deepti-branch
    ```
+
    Then go to GitHub and create a Pull Request from `deepti-branch` to `main`.
 
 5. **CI/CD Pipeline runs automatically**
@@ -44,6 +49,7 @@ Your described workflow is **mostly correct**, but here's the improved version:
    - All checks must pass before merging
 
 6. **Test locally** (before creating PR)
+
    ```bash
    pnpm dev          # Test development server
    pnpm build        # Test production build
@@ -71,6 +77,7 @@ Your described workflow is **mostly correct**, but here's the improved version:
 ## CI/CD Pipeline
 
 The pipeline automatically runs on:
+
 - Every push to `main` branch
 - Every push to `deepti-branch` (or any branch)
 - Every Pull Request to `main`
@@ -114,4 +121,3 @@ git pull origin main
 git branch -d deepti-branch  # Delete local branch
 git push origin --delete deepti-branch  # Delete remote branch
 ```
-

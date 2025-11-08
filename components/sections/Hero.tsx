@@ -1,13 +1,16 @@
 export default function Hero() {
   return (
-    <section id="hero" className="bg-gradient-to-br from-[#FEF2EE] to-white pt-16">
+    <section
+      id="hero"
+      className="bg-gradient-to-br from-[#FEF2EE] to-white pt-16"
+    >
       <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
         <div className="text-center">
           <h1 className="mb-6 text-5xl font-bold text-gray-900 md:text-7xl">
             Product Management
             <span className="block text-[#D35100]">Club at OSU</span>
           </h1>
-          <p className="mb-6 text-lg italic text-gray-700 md:text-xl">
+          <p className="mb-6 text-lg text-gray-700 italic md:text-xl">
             &ldquo;Learn the Process. Lead the Product.&rdquo;
           </p>
           <p className="mx-auto mb-8 max-w-3xl text-xl text-gray-600 md:text-2xl">
