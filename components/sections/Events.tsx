@@ -2,6 +2,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 // If you already use shadcn Button, uncomment next line and replace <a> with <Button asChild>
 // import { Button } from "../ui/button";
 
@@ -10,12 +11,12 @@ type EventAgendaItem = { time: string; item: string };
 
 type EventItem = {
   title: string;
-  date: string;            
-  location?: string;       
+  date: string;
+  location?: string;
   description: string;
-  cover?: string;          
-  ctaLabel?: string;       
-  ctaHref?: string;       
+  cover?: string;
+  ctaLabel?: string;
+  ctaHref?: string;
   agenda?: EventAgendaItem[];
   resources?: EventResource[];
 };
@@ -32,11 +33,13 @@ const events: EventItem[] = [
     ctaHref: "https://calendar.google.com/", // TODO: replace with actual calendar link
     agenda: [
       { time: "6:00", item: "Arrival & Welcome" },
-      { time: "6:05", item: "Opening remarks and introduction of guest speaker Andy Beach" },
+      {
+        time: "6:05",
+        item: "Opening remarks and introduction of guest speaker Andy Beach",
+      },
       {
         time: "6:10",
-        item:
-          "Guest Presentation (Andy): Career journey; path from PM roles to CTO of M+E at Microsoft; product leadership & innovation; challenges and lessons learned; future of PM & AI; personal principles and advice",
+        item: "Guest Presentation (Andy): Career journey; path from PM roles to CTO of M+E at Microsoft; product leadership & innovation; challenges and lessons learned; future of PM & AI; personal principles and advice",
       },
       { time: "6:40", item: "Q&A session — open floor" },
       { time: "6:55", item: "Closing notes" },
@@ -54,7 +57,7 @@ export default function Events() {
     <section id="events" className="mx-auto max-w-6xl px-4 py-16">
       <header className="mb-6">
         <h2 className="text-3xl font-bold tracking-tight">Events</h2>
-        <p className="mt-2 text-muted-foreground">
+        <p className="text-muted-foreground mt-2">
           Come build with us. Here&apos;s what&apos;s happening next.
         </p>
       </header>
@@ -63,7 +66,7 @@ export default function Events() {
         {events.map((e, i) => (
           <article
             key={`${e.title}-${i}`}
-            className="rounded-2xl border bg-background shadow-sm transition-shadow hover:shadow-md"
+            className="bg-background rounded-2xl border shadow-sm transition-shadow hover:shadow-md"
           >
             {e.cover && (
               <div className="relative aspect-[4/3] overflow-hidden rounded-t-2xl">
@@ -79,9 +82,13 @@ export default function Events() {
             )}
 
             <div className="p-5">
-              <h3 className="text-xl font-semibold">{e.title}</h3>
+              <Link href="/events/guest-speaker-andy-beach">
+                <h3 className="cursor-pointer text-xl font-semibold transition-colors hover:text-orange-600">
+                  {e.title}
+                </h3>
+              </Link>
 
-              <div className="mt-1 text-sm text-muted-foreground">
+              <div className="text-muted-foreground mt-1 text-sm">
                 <time>{e.date}</time>
                 {e.location ? <> · {e.location}</> : null}
               </div>
@@ -90,14 +97,16 @@ export default function Events() {
 
               {/* Agenda (collapsible) */}
               {e.agenda && e.agenda.length > 0 ? (
-                <details className="mt-4 group">
-                  <summary className="cursor-pointer select-none text-sm font-medium underline decoration-dotted underline-offset-4 group-open:opacity-70">
+                <details className="group mt-4">
+                  <summary className="cursor-pointer text-sm font-medium underline decoration-dotted underline-offset-4 select-none group-open:opacity-70">
                     View Schedule
                   </summary>
                   <ul className="mt-3 space-y-2">
                     {e.agenda.map((a, idx) => (
                       <li key={idx} className="flex gap-3 text-sm">
-                        <span className="shrink-0 font-mono font-medium">{a.time}</span>
+                        <span className="shrink-0 font-mono font-medium">
+                          {a.time}
+                        </span>
                         <span className="text-muted-foreground">{a.item}</span>
                       </li>
                     ))}
@@ -114,7 +123,7 @@ export default function Events() {
                       href={r.url}
                       target="_blank"
                       rel="noreferrer"
-                      className="inline-flex items-center rounded-xl border px-3 py-2 text-xs font-medium hover:bg-accent"
+                      className="hover:bg-accent inline-flex items-center rounded-xl border px-3 py-2 text-xs font-medium"
                     >
                       {r.label}
                     </a>
@@ -128,7 +137,7 @@ export default function Events() {
                   href={e.ctaHref}
                   target="_blank"
                   rel="noreferrer"
-                  className="mt-4 inline-flex items-center rounded-xl border px-3 py-2 text-sm font-medium hover:bg-accent"
+                  className="hover:bg-accent mt-4 inline-flex items-center rounded-xl border px-3 py-2 text-sm font-medium"
                 >
                   {e.ctaLabel}
                 </a>

@@ -13,16 +13,56 @@ import Autoplay from "embla-carousel-autoplay";
 const officers = [
   { name: "Prisha Velhal", role: "President", image: null },
   { name: "Nira Patel", role: "Vice President", image: null },
-  { name: "Brennan Kelly", role: "Vice President of Finance", image: "/officer_photos/brennan.webp" },
-  { name: "Adwaith Renjith", role: "Finance Chair", image: "/officer_photos/adwaith.webp" },
-  { name: "Dhaya Raja", role: "Marketing Lead", image: "/officer_photos/dhaya.webp" },
-  { name: "Vikram Vasudevan", role: "Outreach Coordinator", image: "/officer_photos/vikram.webp" },
-  { name: "Fatehjot Gogia", role: "Operations Coordinator", image: "/officer_photos/fatehjot.webp" },
-  { name: "Josiah Liebert", role: "Event Coordinator", image: "/officer_photos/josiah.webp" },
-  { name: "Deepti Ravidath", role: "Technical Lead", image: "/officer_photos/deepti.webp" },
-  { name: "Lauren Gliane", role: "UX Design Lead", image: "/officer_photos/lauren.webp" },
-  { name: "Rebeca Moreno Rodriguez", role: "Full-Stack Engineer", image: "/officer_photos/rebeca.webp" },
-  { name: "Ajinkya Gokule", role: "Systems Architect", image: "/officer_photos/ajinkya.webp" },
+  {
+    name: "Brennan Kelly",
+    role: "Vice President of Finance",
+    image: "/officer_photos/brennan.webp",
+  },
+  {
+    name: "Adwaith Renjith",
+    role: "Finance Chair",
+    image: "/officer_photos/adwaith.webp",
+  },
+  {
+    name: "Dhaya Raja",
+    role: "Marketing Lead",
+    image: "/officer_photos/dhaya.webp",
+  },
+  {
+    name: "Vikram Vasudevan",
+    role: "Outreach Coordinator",
+    image: "/officer_photos/vikram.webp",
+  },
+  {
+    name: "Fatehjot Gogia",
+    role: "Operations Coordinator",
+    image: "/officer_photos/fatehjot.webp",
+  },
+  {
+    name: "Josiah Liebert",
+    role: "Event Coordinator",
+    image: "/officer_photos/josiah.webp",
+  },
+  {
+    name: "Deepti Ravidath",
+    role: "Technical Lead",
+    image: "/officer_photos/deepti.webp",
+  },
+  {
+    name: "Lauren Gliane",
+    role: "UX Design Lead",
+    image: "/officer_photos/lauren.webp",
+  },
+  {
+    name: "Rebeca Moreno Rodriguez",
+    role: "Full-Stack Engineer",
+    image: "/officer_photos/rebeca.webp",
+  },
+  {
+    name: "Ajinkya Gokule",
+    role: "Systems Architect",
+    image: "/officer_photos/ajinkya.webp",
+  },
 ];
 
 const gradientColors = [
@@ -85,8 +125,8 @@ export default function Officers() {
                     className={`h-24 w-24 bg-gradient-to-br ${gradientColors[index % gradientColors.length]} mx-auto mb-3`}
                   >
                     {officer.image && (
-                      <AvatarImage 
-                        src={officer.image} 
+                      <AvatarImage
+                        src={officer.image}
                         alt={officer.name}
                         className="object-cover"
                       />

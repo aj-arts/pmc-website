@@ -7,8 +7,8 @@ export default function Contact() {
         <div className="mb-16 text-center">
           <h2 className="mb-4 text-4xl font-bold">Get In Touch</h2>
           <p className="mx-auto max-w-3xl text-xl text-gray-300">
-            Ready to join our community? Have questions? We&apos;d love to hear from
-            you!
+            Ready to join our community? Have questions? We&apos;d love to hear
+            from you!
           </p>
         </div>
 
