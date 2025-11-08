@@ -22,7 +22,9 @@ export default function GuestSpeakerEvent() {
 
           <div className="grid gap-12 lg:grid-cols-2">
             <div>
-              <h1 className="mb-6 text-5xl font-bold">Scott Hanselman Guest Speaker</h1>
+              <h1 className="mb-6 text-5xl font-bold">
+                Scott Hanselman Guest Speaker
+              </h1>
               <h2 className="mb-4 text-3xl font-semibold text-orange-100">
                 Product Leadership & Community-Driven Development
               </h2>
@@ -129,13 +131,14 @@ export default function GuestSpeakerEvent() {
                   Scott brings a wealth of real-world experience and insights.
                 </p>
                 <p className="mb-6">
-                  This interactive session will explore what it truly means to be
-                  a product manager, how users pick products, and the key factors
-                  that drive product success. Scott will lead live demonstrations
-                  with audience discussion and feedback, exploring different types
-                  of product design, invention styles, and multifunctional
-                  products. This is a unique opportunity to learn from one of
-                  the most influential voices in the developer community.
+                  This interactive session will explore what it truly means to
+                  be a product manager, how users pick products, and the key
+                  factors that drive product success. Scott will lead live
+                  demonstrations with audience discussion and feedback,
+                  exploring different types of product design, invention styles,
+                  and multifunctional products. This is a unique opportunity to
+                  learn from one of the most influential voices in the developer
+                  community.
                 </p>
                 <h4 className="mb-4 text-xl font-semibold text-gray-900">
                   What Scott Will Cover:
@@ -180,18 +183,18 @@ export default function GuestSpeakerEvent() {
                   sharing insights on technology, culture, gadgets, inclusion,
                   code, and the web. He hosts the popular Hanselminutes podcast
                   (over 1,000 episodes) and Azure Friday (over 750 episodes),
-                  where he explores the latest in technology and cloud computing.
-                  He has written several technical books and has spoken in
-                  person to over one million developers worldwide.
+                  where he explores the latest in technology and cloud
+                  computing. He has written several technical books and has
+                  spoken in person to over one million developers worldwide.
                 </p>
                 <p className="mb-4">
                   Before joining Microsoft, Scott was the Chief Architect at
                   Corillian Corporation (now part of Checkfree) for over 6
                   years, and prior to that, a Principal Consultant at STEP
                   Technology. He has worked at Intel and Nike, consulted
-                  globally, and was an Adjunct Professor at OIT, teaching C#
-                  and Web Services. Notably, he created the first PalmPilot
-                  Diabetes Management System in 1998.
+                  globally, and was an Adjunct Professor at OIT, teaching C# and
+                  Web Services. Notably, he created the first PalmPilot Diabetes
+                  Management System in 1998.
                 </p>
                 <p>
                   This event continues PMC OSU&apos;s commitment to bringing
@@ -230,4 +233,3 @@ export default function GuestSpeakerEvent() {
     </div>
   );
 }
-
