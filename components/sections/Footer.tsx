@@ -1,4 +1,5 @@
 import { Linkedin, Instagram } from "lucide-react";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -17,33 +18,33 @@ export default function Footer() {
             <h4 className="mb-4 text-lg font-semibold">Quick Links</h4>
             <ul className="space-y-2 text-gray-400">
               <li>
-                <a href="#about" className="transition-colors hover:text-white">
+                <Link href="/#about" className="transition-colors hover:text-white">
                   About
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#events"
+                <Link
+                  href="/events"
                   className="transition-colors hover:text-white"
                 >
                   Events
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#officers"
+                <Link
+                  href="/officers"
                   className="transition-colors hover:text-white"
                 >
                   Officers
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#contact"
+                <Link
+                  href="/contact"
                   className="transition-colors hover:text-white"
                 >
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
