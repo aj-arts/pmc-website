@@ -84,7 +84,7 @@ const events: EventItem[] = [
 
 export default function Events() {
   return (
-    <section id="events" className="mx-auto max-w-6xl px-4 py-16">
+    <section className="mx-auto max-w-6xl px-4 py-16">
       <header className="mb-6">
         <h2 className="text-3xl font-bold tracking-tight">Events</h2>
         <p className="text-muted-foreground mt-2">

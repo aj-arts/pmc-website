@@ -1,9 +1,8 @@
+import Link from "next/link";
+
 export default function Hero() {
   return (
-    <section
-      id="hero"
-      className="bg-gradient-to-br from-[#FEF2EE] to-white pt-16"
-    >
+    <section className="bg-gradient-to-br from-[#FEF2EE] to-white pt-16">
       <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
         <div className="text-center">
           <h1 className="mb-6 text-5xl font-bold text-gray-900 md:text-7xl">
@@ -18,18 +17,18 @@ export default function Hero() {
             to develop real-world products and advance your PM skills.
           </p>
           <div className="flex flex-col justify-center gap-4 sm:flex-row">
-            <a
-              href="#contact"
+            <Link
+              href="/contact"
               className="rounded-lg bg-[#D35100] px-8 py-3 font-semibold text-white transition-colors duration-200 hover:bg-[#B74700]"
             >
               Join Us
-            </a>
-            <a
+            </Link>
+            <Link
               href="#about"
               className="rounded-lg border border-[#D35100] px-8 py-3 font-semibold text-[#D35100] transition-colors duration-200 hover:bg-[#FEF2EE]"
             >
               Learn More
-            </a>
+            </Link>
           </div>
         </div>
       </div>

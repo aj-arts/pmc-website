@@ -2,7 +2,7 @@ import { Mail, MapPin } from "lucide-react";
 
 export default function Contact() {
   return (
-    <section id="contact" className="bg-gray-900 py-20 text-white">
+    <section className="bg-gray-900 py-20 text-white">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-16 text-center">
           <h2 className="mb-4 text-4xl font-bold">Get In Touch</h2>

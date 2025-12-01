@@ -2,16 +2,17 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Menu, X } from "lucide-react";
 
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navItems = [
-    { href: "#about", label: "About" },
-    { href: "#events", label: "Events" },
-    { href: "#officers", label: "Officers" },
-    { href: "#contact", label: "Contact" },
+    { href: "/#about", label: "About" },
+    { href: "/events", label: "Events" },
+    { href: "/officers", label: "Officers" },
+    { href: "/contact", label: "Contact" },
   ];
 
   return (
@@ -20,7 +21,18 @@ export default function Navigation() {
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <Link href="/" className="text-2xl font-bold text-[#D35100]">
+            <Link
+              href="/"
+              className="flex items-center gap-2 text-2xl font-bold text-[#D35100]"
+            >
+              <Image
+                src="/prodmangclublogo.png"
+                alt="Product Management Club logo"
+                width={40}
+                height={40}
+                className="h-10 w-10 object-contain"
+                priority
+              />
               PMC OSU
             </Link>
           </div>
@@ -31,7 +43,7 @@ export default function Navigation() {
               {navItems.map((item) => (
                 <Link
                   key={item.href}
-                  href={item.href.startsWith("#") ? `/${item.href}` : item.href}
+                  href={item.href}
                   className="px-3 py-2 text-sm font-medium text-gray-700 transition-colors duration-200 hover:text-[#D35100]"
                 >
                   {item.label}
@@ -63,7 +75,7 @@ export default function Navigation() {
               {navItems.map((item) => (
                 <Link
                   key={item.href}
-                  href={item.href.startsWith("#") ? `/${item.href}` : item.href}
+                  href={item.href}
                   className="block px-3 py-2 text-base font-medium text-gray-700 transition-colors duration-200 hover:text-[#D35100]"
                   onClick={() => setIsMenuOpen(false)}
                 >
